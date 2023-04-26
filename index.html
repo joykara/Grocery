@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+        <form id="grocery-form">
+            <p class="alert"></p>
+            <h3>Grocery List</h3>
+            <div class="form-actions">
+                <input type="text" id="grocery" placeholder="e.g milk">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+
+        <div class="grocery-container">
+            <div class="grocery-list">
+                <article class="grocery-item">
+                    <p id="title"> item</p>
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn"><i class="fa-sharp fa-solid fa-pen"></i></button>
+                        <button type="button" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </article>
+            </div>
+            <button type="button" class="clear-btn"></button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

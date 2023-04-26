@@ -1,0 +1,97 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b76c0aab;
+    font-family: cursive;
+}
+.main{
+    background-color: #fff;
+    margin:90px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 75vh;
+    border-radius: 1rem;
+}
+#grocery-form{
+    padding: 40px;
+}
+#grocery-form h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.form-actions{
+    padding: 20px 0;
+    display: flex;
+    max-width: 40vh;
+}
+.form-actions input{
+    height: 30px;
+    width: 250px;
+    border: transparent;
+    background-color: aliceblue;
+}
+.form-actions .submit-btn{
+    height: 30px;
+    padding: 0 9px;
+    border: transparent;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: #c4740bd2;
+    letter-spacing: 1px;
+}
+.form-actions .submit-btn:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+.grocery-container{
+    width: 40vh;
+}
+.grocery-item{
+    display: flex;
+    justify-content: space-between;
+    /* visibility: hidden; */
+}
+.btn-container button{
+    border: transparent;
+    background: none;
+    margin: 0 10px;
+}
+.btn-container button:hover{
+    cursor: pointer;
+}
+.edit-btn:hover{
+    color: #0ba22e;
+    transition: 0.5s;
+}
+.delete-btn:hover{
+    color: #b30606;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+    .main{
+        max-width: 60vh;
+    }
+    .grocery-container{
+        width: 30vh;
+    }
+    .form-actions input{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .main{
+        max-width: 40vh;
+    }
+    .form-actions input{
+        width: 180px;
+    }
+}

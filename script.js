@@ -13,9 +13,6 @@ let editID = "";
 
 //submit form
 form.addEventListener('submit', addItem);
-const deleteButton = document.getElementsByClassName("delete-btn");
-deleteButton.addEventListener("click", deleteItem);
-
 
 function addItem(e) {
     e.preventDefault();
@@ -33,15 +30,7 @@ function addItem(e) {
     }
 }
 
-function deleteItem(e) {
-    e.preventDefault();
-    // Code to delete the item(s) from the list
-    // Display pop-up message
-    alert("Item deleted successfully.");
-}
-
-
-function displayAlert() {
+function displayAlert(text,action) {
     alert.textContent = text;
     alert.classList.add(`alert-${action}`);
 }

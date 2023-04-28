@@ -31,7 +31,7 @@ body{
     padding: 15px;
     border-radius: 5px;
     margin: 10px 0;
-    /* visibility: hidden; */
+    visibility: hidden;
   }
 .form-actions{
     padding: 20px 0;
@@ -82,6 +82,19 @@ body{
 .delete-btn:hover{
     color: #b30606;
     transition: 0.5s;
+}
+.clear-btn:hover{
+    background-color: #b30606;
+    transition: 0.5s;
+}
+.clear-btn{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    border: transparent;
+    margin: 30px 80px;
 }
 
 @media screen and (max-width: 900px) {

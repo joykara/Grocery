@@ -13,7 +13,7 @@
             <p class="alert"></p>
             <h3>Grocery List</h3>
             <div class="form-actions">
-                <input type="text" id="grocery" placeholder="e.g milk">
+                <input type="text" id="grocery" placeholder="e.g milk" required>
                 <button type="submit" class="submit-btn">Submit</button>
             </div>
         </form>
@@ -21,7 +21,11 @@
         <div class="grocery-container">
             <div class="grocery-list">
                 <article class="grocery-item">
-                    <p id="title"> item</p>
+                    <div class="items">
+                        <ul id="list">
+                            <li>item</li>
+                        </ul>
+                    </div>
                     <div class="btn-container">
                         <button type="button" class="edit-btn"><i class="fa-sharp fa-solid fa-pen"></i></button>
                         <button type="button" class="delete-btn"><i class="fa-solid fa-trash"></i></button>

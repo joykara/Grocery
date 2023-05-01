@@ -3,9 +3,9 @@ const form = document.querySelector('#grocery-form');
 const groceryInput = document.querySelector('#grocery');
 const submitBtn = document.querySelector('.submit-btn');
 const btnContainer = document.querySelector('.btn-container');
-const item = document.querySelector('.list');
+const item = document.querySelector('.items ul');
 
-submitBtn.addEventListener('click', (e)=> {
+submitBtn.addEventListener('click', (e) => {
   if (groceryInput != "") {
     e.preventDefault();
     //create li
@@ -13,5 +13,5 @@ submitBtn.addEventListener('click', (e)=> {
     newItem.innerHTML = groceryInput.value;
     item.appendChild(newItem);
   }
-})
+});
 
